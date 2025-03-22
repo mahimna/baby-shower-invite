@@ -22,14 +22,14 @@ rsvpForm.addEventListener('submit', function(event) {
 
 // Function to simulate sending an email to mahimnadave@gmail.com
 function sendEmail(name) {
-    fetch('https://formsubmit.co/ajax/mahima@gmail.com', {
+    fetch('https://formsubmit.co/ajax/mahimnadave@gmail.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
             name: name,
-            email: 'mahima@gmail.com',
+            email: 'mahimnadave@gmail.com',
             message: `${name} has RSVP'd Yes!`
         })
     }).then(response => response.json())
